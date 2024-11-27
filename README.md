@@ -94,3 +94,62 @@ Après affichage du sapin vous devrez afficher à l'écran le nombre de boules p
 
 Il y a 10 boules sur ce beau sapin.
 ```
+
+## Exo 5 - Construction et affichage d'un vecteur 2D
+
+1. Demandez à l'utilisateur la taille `n` du vecteur
+2. Créez et remplissez d'entiers compris entre 0 et 9 un vecteur 2D, de côté `n`. 
+3. Affichez le tableau ainsi créé.
+
+Exemple pour `n=4` :
+
+```text
+2 9 6 1
+3 5 1 0
+1 3 7 7
+1 2 5 6
+```
+
+Nous donnons ci-dessous un exemple d'utilisation de la bibliothèque `random` afin de générer un entier aléatoire compris entre 1 et 9 :
+
+```cpp
+#include <iostream>
+#include <random>
+
+int main() {
+    // Initialisation du générateur de nombres aléatoires
+    std::random_device rd;  // Génère une graine aléatoire
+    std::mt19937 gen(rd()); // Générateur de nombres aléatoires Mersenne Twister
+    std::uniform_int_distribution<> dis(1, 9); // Distribution uniforme entre 1 et 9
+
+    // Génération d'un nombre aléatoire
+    int random_number = dis(gen);
+
+    // Affichage du nombre aléatoire
+    std::cout << "Nombre aléatoire entre 1 et 9: " << random_number << std::endl;
+
+    return 0;
+}
+```
+
+## Exo 6 - Test matrice symétrique
+
+Soit une matrice (vecteur 2D) M à `n` lignes, `n` colonnes stockée dans un vecteur de `n` vecteurs à `n` éléments entiers.
+
+M est symétrique si pour tout `i` et `j` indices respectivement de lignes et colonnes on a `M[i][j] = M[j][i]`.
+
+Par exemple la matrice suivante est symétrique : 
+```txt
+1 6 8 3 
+6 6 5 1
+8 5 9 7
+3 1 7 7
+```
+tandis que celle-ci ne l'est pas :
+```txt
+1 6 8 3 
+3 6 5 1
+6 4 9 7
+9 6 8 7
+```    
+Écrire un code indiquant si une matrice est symétrique ou non.
