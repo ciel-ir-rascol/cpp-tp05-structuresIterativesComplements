@@ -153,3 +153,20 @@ tandis que celle-ci ne l'est pas :
 9 6 8 7
 ```    
 Écrire un code indiquant si une matrice est symétrique ou non.
+
+
+## Exo 7 - Construction matrice symétrique
+
+Cette fois-ci il s'agit de construire une matrice symétrique de côté `n` donné par l'utilisateur, le contenu de cette matrice sera remplie de manière aléatoire avec des entiers tirés entre 0 et 9. Nous rappelons que pour q'une matrice `M` soit symétrique elle doit respecter la propriété `M[i][j] = M[j][i]`.
+
+## Exo 8 - Triangle de pascal
+
+Réaliser un programme qui affiche les n (n >=2) premières lignes du triangle de Pascal.
+Pour n = 10, on obtient :
+
+![](figures\trianglePascal.jpg)
+
+
+l'élément situé en ligne i et colonne j, noté $t_{i,j}$ vaut la somme de celui situé en ligne i-1,colonne j avec celui situé en ligne i-1 et colonne j-1. 
+
+cad : $t_{i,j}$ = $t_{i-1,j}$ + $t_{i-1,j-1}$
