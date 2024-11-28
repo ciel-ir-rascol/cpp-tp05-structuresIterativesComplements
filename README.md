@@ -164,7 +164,7 @@ Cette fois-ci il s'agit de construire une matrice symétrique de côté `n` donn
 Réaliser un programme qui affiche les n (n >=2) premières lignes du triangle de Pascal.
 Pour n = 10, on obtient :
 
-![](figures\trianglePascal.jpg)
+![](figures/trianglePascal.jpg)
 
 
 l'élément situé en ligne i et colonne j, noté $t_{i,j}$ vaut la somme de celui situé en ligne i-1,colonne j avec celui situé en ligne i-1 et colonne j-1. 
